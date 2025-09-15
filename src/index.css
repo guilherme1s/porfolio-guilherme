@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-white: #ffffff;
+  --color-primary: #000;
+  --color-secondary: oklch(68.5% 0.169 237.323);
+}
+
+@layer base {
+  body {
+    background: var(--color-secon);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body,
+  input,
+  textarea,
+  button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}
