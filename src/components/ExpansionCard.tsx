@@ -24,7 +24,7 @@ export function ExpansionCard({ expansionPanel }: ExpansionCardProps) {
   };
 
   return (
-    <div className="rounded-xl p-6 shadow-[0_0_5px_rgba(0,0,0,0.2)]">
+    <div className="rounded-xl p-6 border border-gray-300">
       {expansionPanel.map((item, index) => {
         const isLastElement = index === expansionPanel.length - 1;
 
@@ -45,7 +45,7 @@ export function ExpansionCard({ expansionPanel }: ExpansionCardProps) {
                 <h3 className="mr-2">{item.subtitle}</h3>
               </div>
 
-              {open ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+              {open === item.id ? <ExpandLessIcon /> : <ExpandMoreIcon />}
             </header>
 
             <main>
@@ -64,7 +64,7 @@ export function ExpansionCard({ expansionPanel }: ExpansionCardProps) {
                 )}
               </AnimatePresence>
             </main>
-            <div className="my-4" >{!isLastElement && <Divider />}</div>
+            <div className="my-4">{!isLastElement && <Divider />}</div>
           </div>
         );
       })}
