@@ -1,6 +1,7 @@
 import guilhermePerfil from "../assets/guilherme-perfil.jpeg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { DownloadCurriculum } from "./DownloadCurriculum";
 
 export function About() {
   return (
@@ -17,11 +18,15 @@ export function About() {
 
         <p className="mt-5">
           Desenvolvedor Full Stack / engenheiro da computação com destaque em
-          front-end. Apaixonado por criar soluções modernas, tenho experiência
+          front-end. Apaixonado por criar soluções e interfaces modernas, tenho
           experiência profissional em todas as etapas do ciclo de
           desenvolvimento de sistemas. Trabalhando principalmente com React,
           Vue.js, TypeScript, JavaScript, PHP e MySQL.
         </p>
+
+        <div className="mt-5">
+          <DownloadCurriculum />
+        </div>
 
         <div className="xl:hidden flex flex-col mt-5 gap-2">
           <div className="flex items-center gap-2">
