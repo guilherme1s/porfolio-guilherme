@@ -19,7 +19,7 @@ export const professional = [
   {
     id: 2,
     title: "Edvac Educação e Informática LTDA",
-    subtitle: "Março 2024 - presente",
+    subtitle: "Março 2024 - Abril 2024",
     role: "Estágio em desenvolvimento front-end",
     topics: [
       "Experiênca com HTML, CSS e JavaScript para desenvolvimento Front-End;",

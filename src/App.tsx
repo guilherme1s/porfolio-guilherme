@@ -7,6 +7,8 @@ import { projects } from "./data/project";
 
 import { SectionTitle } from "./components/SectionTitle";
 import { ProjectCard } from "./components/ProjectCard";
+import { SkillCard } from "./components/SkillCard";
+import { skills } from "./data/skill";
 
 export function App() {
   return (
@@ -15,7 +17,7 @@ export function App() {
         <Sidebar />
       </aside>
 
-      <main className="overflow-y-auto flex flex-col gap-12 xl:gap-14 mt-12 xl:mt-0">
+      <main className="overflow-y-auto flex flex-col gap-12 xl:gap-14 mt-12 pb-12 xl:mt-0">
         <section
           id="about"
           className="xl:min-h-screen flex items-center justify-center"
@@ -56,6 +58,23 @@ export function App() {
                     deployUrl={project.deployUrl}
                     projectUrl={project.gitHubUrl}
                     tags={project.tecnology}
+                  />
+                );
+              })}
+            </div>
+          </section>
+
+          <section id="skills" className="flex flex-col gap-12">
+            <SectionTitle title="Habilidades" />
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+              {skills.map((skill) => {
+                return (
+                  <SkillCard
+                    key={skill.id}
+                    title={skill.title}
+                    icon={skill.icon}
+                    hoverColor={skill.hoverClass}
                   />
                 );
               })}
