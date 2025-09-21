@@ -2,8 +2,11 @@ import { Sidebar } from "./components/Sidebar";
 import { About } from "./components/About";
 import { ExpansionCard } from "./components/ExpansionCard";
 import { ExperienceList } from "./components/ExperienceList";
-import * as experience from "./data/experience";
+import { professional } from "./data/experience";
+import { projects } from "./data/project";
+
 import { SectionTitle } from "./components/SectionTitle";
+import { ProjectCard } from "./components/ProjectCard";
 
 export function App() {
   return (
@@ -25,7 +28,7 @@ export function App() {
             <SectionTitle title="Experiência" />
 
             <ExpansionCard
-              expansionPanel={experience.professional.map((exp) => ({
+              expansionPanel={professional.map((exp) => ({
                 id: exp.id,
                 title: exp.title,
                 subtitle: exp.subtitle,
@@ -38,6 +41,25 @@ export function App() {
                 ),
               }))}
             />
+          </section>
+
+          <section id="projects" className="flex flex-col gap-12">
+            <SectionTitle title="Projetos" />
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              {projects.map((project) => {
+                return (
+                  <ProjectCard
+                    key={project.id}
+                    title={project.title}
+                    description={project.description}
+                    deployUrl={project.deployUrl}
+                    projectUrl={project.gitHubUrl}
+                    tags={project.tecnology}
+                  />
+                );
+              })}
+            </div>
           </section>
         </div>
       </main>
