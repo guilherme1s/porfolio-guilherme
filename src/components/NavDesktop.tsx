@@ -1,17 +1,18 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { type NavProps } from "./NavMobile";
 
-export function NavDesktop() {
+export function NavDesktop({ about, contact, experience, projects, skills }: NavProps) {
   return (
     <nav className="hidden xl:flex flex-col items-center justify-evenly h-full text-lg">
       <h1 className="text-3xl font-pacifico">Guilherme</h1>
 
       <ul className="flex flex-col gap-4">
-        <li><a href="#">Sobre Mim</a></li>
-        <li><a href="#">Experiências</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Habilidades</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href={about}>Sobre Mim</a></li>
+        <li><a href={experience}>Experiências</a></li>
+        <li><a href={projects}>Projetos</a></li>
+        <li><a href={skills}>Habilidades</a></li>
+        <li><a href={contact}>Contato</a></li>
       </ul>
 
       <div className="flex flex-col gap-2">

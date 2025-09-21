@@ -28,10 +28,22 @@ export function Sidebar() {
           open ? "opacity-100 -translate-y-5 p-5" : "opacity-0 -translate-y-5"
         }`}
       >
-        <NavMobile />
+        <NavMobile
+          about="#about"
+          experience="#experience"
+          skills="#skills"
+          contact="#contact"
+          projects="#projects"
+        />
       </div>
 
-      <NavDesktop />
+      <NavDesktop
+        about="#about"
+        experience="#experience"
+        skills="#skills"
+        contact="#contact"
+        projects="#projects"
+      />
     </div>
   );
 }

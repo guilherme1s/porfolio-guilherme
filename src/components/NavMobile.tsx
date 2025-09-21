@@ -4,7 +4,15 @@ import FolderOpenOutlinedIcon from "@mui/icons-material/FolderOpenOutlined";
 import BuildOutlinedIcon from "@mui/icons-material/BuildOutlined";
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 
-export function NavMobile() {
+export interface NavProps {
+  about: string;
+  experience: string;
+  projects: string;
+  skills: string;
+  contact: string;
+}
+
+export function NavMobile({ about, contact, experience, skills, projects }: NavProps) {
   return (
     <nav className="xl:hidden bg-white rounded-xl p-6 w-fit shadow-md -translate-4">
       <ul className="flex flex-col gap-6">
@@ -13,35 +21,35 @@ export function NavMobile() {
             fontSize="small"
             className="text-primary"
           />
-          <a href="#" className="font-sans font-light text-primary">
+          <a href={about} className="font-sans font-light text-primary">
             Sobre Mim
           </a>
         </li>
 
         <li className="flex items-center gap-2">
           <WorkOutlineOutlinedIcon fontSize="small" className="text-primary" />
-          <a href="#" className="font-sans font-light text-primary">
+          <a href={experience} className="font-sans font-light text-primary">
             Experiências
           </a>
         </li>
 
         <li className="flex items-center gap-2">
           <FolderOpenOutlinedIcon fontSize="small" className="text-primary" />
-          <a href="#" className="font-sans font-light text-primary">
+          <a href={projects} className="font-sans font-light text-primary">
             Projetos
           </a>
         </li>
 
         <li className="flex items-center gap-2">
           <BuildOutlinedIcon fontSize="small" className="text-primary" />
-          <a href="#" className="font-sans font-light text-primary">
+          <a href={skills} className="font-sans font-light text-primary">
             Habilidades
           </a>
         </li>
 
         <li className="flex items-center gap-2">
           <MailOutlineOutlinedIcon fontSize="small" className="text-primary" />
-          <a href="#" className="font-sans font-light text-primary">
+          <a href={contact} className="font-sans font-light text-primary">
             Contato
           </a>
         </li>

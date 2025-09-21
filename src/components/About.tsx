@@ -4,7 +4,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export function About() {
   return (
-    <div className="flex flex-col xl:flex-row gap-14 w-full p-12 xl:w-4xl xl:p-0">
+    <div className="flex flex-col xl:flex-row xl:gap-14 w-full px-12 xl:w-4xl xl:p-0">
       <div className="flex flex-col gap-4 xl:w-1/2 justify-center">
         <div>
           <h1 className="text-5xl font-medium uppercase mb-2">
@@ -43,7 +43,7 @@ export function About() {
         </div>
       </div>
 
-      <div className="flex-1">
+      <div className="flex-1 justify-center items-center flex">
         <img
           src={guilhermePerfil}
           className="hidden xl:flex rounded-full border-4 border-white outline-4 outline-primary"
