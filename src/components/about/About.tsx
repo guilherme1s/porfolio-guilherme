@@ -1,7 +1,7 @@
-import guilhermePerfil from "../assets/guilherme-perfil.jpeg";
+import guilhermePerfil from "../../assets/guilherme-perfil.jpeg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { DownloadCurriculum } from "./DownloadCurriculum";
+import { DownloadCurriculum } from "../DownloadCurriculum";
 
 export function About() {
   return (

@@ -1,8 +1,8 @@
 import MenuIcon from "@mui/icons-material/Menu";
 
 import { useState } from "react";
-import { NavMobile } from "./NavMobile";
-import { NavDesktop } from "./NavDesktop";
+import { NavMobile } from "../NavMobile";
+import { NavDesktop } from "../NavDesktop";
 
 export function Sidebar() {
   const [open, setOpen] = useState(false);
