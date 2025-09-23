@@ -1,4 +1,5 @@
 import { AboutSection } from "./components/about/AboutSection";
+import { ContactFormSection } from "./components/contactForm/ContactFormSection";
 import { ExperienceSection } from "./components/experience/ExperienceSection";
 import { ProjectSection } from "./components/projects/ProjectSection";
 import { SkillSection } from "./components/skills/SkillSection";
@@ -12,6 +13,7 @@ export function App() {
         <ExperienceSection />
         <ProjectSection />
         <SkillSection />
+        <ContactFormSection />
       </div>
     </Layout>
   );
