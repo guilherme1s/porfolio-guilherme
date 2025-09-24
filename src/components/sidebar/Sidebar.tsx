@@ -1,14 +1,18 @@
 import MenuIcon from "@mui/icons-material/Menu";
 
-import { useState } from "react";
 import { NavMobile } from "../NavMobile";
 import { NavDesktop } from "../NavDesktop";
+import { useState } from "react";
 
 export function Sidebar() {
   const [open, setOpen] = useState(false);
 
   const handleOpenMenu = () => {
     setOpen(!open);
+  };
+
+  const optionClicked = () => {
+    setOpen(false);
   };
 
   return (
@@ -34,6 +38,7 @@ export function Sidebar() {
           skills="#skills"
           contact="#contact"
           projects="#projects"
+          onOptionClicked={optionClicked}
         />
       </div>
 
