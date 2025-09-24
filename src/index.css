@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-white: #ffffff;
@@ -6,12 +7,15 @@
   --color-secondary: oklch(68.5% 0.169 237.323);
   --color-tertiary: oklch(70.4% 0.04 256.788);
 
+  --color-dark-primary: #202024;
+  --color-dark-secondary: #323238;
+
   --font-pacifico: "Pacifico", cursive;
 }
 
 @layer base {
   body {
-    background: var(--color-secon);
+    background: var(--color-white);
     -webkit-font-smoothing: antialiased;
   }
 

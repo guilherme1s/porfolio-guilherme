@@ -36,7 +36,7 @@ export function ExpansionCard({ expansionPanel }: ExpansionCardProps) {
                 ${
                   open === item.id
                     ? "bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"
-                    : "text-gray-800 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-blue-500 hover:via-purple-500 hover:to-pink-500"
+                    : "text-gray-800 dark:text-white hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-blue-500 hover:via-purple-500 hover:to-pink-500"
                 }`}
               >
                 <h3 className="text-2xl font-medium cursor-pointer">
@@ -64,7 +64,7 @@ export function ExpansionCard({ expansionPanel }: ExpansionCardProps) {
                 )}
               </AnimatePresence>
             </main>
-            <div className="my-4">{!isLastElement && <Divider />}</div>
+            <div className="my-4 dark:bg-white">{!isLastElement && <Divider />}</div>
           </div>
         );
       })}
