@@ -10,7 +10,7 @@ interface ContactFormType {
 }
 
 export function ContactForm() {
-  const { register, handleSubmit, reset, watch } = useForm<ContactFormType>();
+  const { register, handleSubmit, reset } = useForm<ContactFormType>();
   const [open, setOpen] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
 
