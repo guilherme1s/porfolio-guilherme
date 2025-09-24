@@ -17,7 +17,9 @@ interface ExpansionCardProps {
 }
 
 export function ExpansionCard({ expansionPanel }: ExpansionCardProps) {
-  const [open, setOpen] = useState<number | null>(null);
+  const [open, setOpen] = useState<number | null>(
+    expansionPanel.length > 0 ? expansionPanel[0].id : null
+  );
 
   const handleOpenExpansion = (id: number) => {
     setOpen((prev) => (prev === id ? null : id));
@@ -64,7 +66,9 @@ export function ExpansionCard({ expansionPanel }: ExpansionCardProps) {
                 )}
               </AnimatePresence>
             </main>
-            <div className="my-4 dark:bg-white">{!isLastElement && <Divider />}</div>
+            <div className="my-4 dark:bg-white">
+              {!isLastElement && <Divider />}
+            </div>
           </div>
         );
       })}

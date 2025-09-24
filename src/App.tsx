@@ -5,8 +5,6 @@ import { ExperienceSection } from "./components/experience/ExperienceSection";
 import { ProjectSection } from "./components/projects/ProjectSection";
 import { ContactFormSection } from "./components/contactForm/ContactFormSection";
 import { SkillSection } from "./components/skills/SkillSection";
-import { Avatar } from "./components/Avatar";
-import guilhermePerfil from "./assets/guilherme-perfil.jpeg";
 
 export function App() {
   return (
@@ -18,10 +16,6 @@ export function App() {
           <ProjectSection />
           <SkillSection />
           <ContactFormSection />
-
-          <div className="xl:hidden">
-            <Avatar src={guilhermePerfil} />
-          </div>
         </div>
       </Layout>
     </ThemeProvider>

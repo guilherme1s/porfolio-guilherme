@@ -20,31 +20,56 @@ export function NavDesktop({
 
       <ul className="flex flex-col gap-4">
         <li>
-          <a href={about}>Sobre Mim</a>
+          <a
+            className="hover:text-gray-300 transition-colors duration-100"
+            href={about}
+          >
+            Sobre Mim
+          </a>
         </li>
         <li>
-          <a href={experience}>Experiências</a>
+          <a
+            className="hover:text-gray-300 transition-colors duration-100"
+            href={experience}
+          >
+            Experiências
+          </a>
         </li>
         <li>
-          <a href={projects}>Projetos</a>
+          <a
+            className="hover:text-gray-300 transition-colors duration-100"
+            href={projects}
+          >
+            Projetos
+          </a>
         </li>
         <li>
-          <a href={skills}>Habilidades</a>
+          <a
+            className="hover:text-gray-300 transition-colors duration-100"
+            href={skills}
+          >
+            Habilidades
+          </a>
         </li>
         <li>
-          <a href={contact}>Contato</a>
+          <a
+            className="hover:text-gray-300 transition-colors duration-100"
+            href={contact}
+          >
+            Contato
+          </a>
         </li>
       </ul>
 
       <div className="flex flex-col gap-2">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 hover:text-gray-300 transition-colors duration-100">
           <GitHubIcon fontSize="large" />
           <a href="https://github.com/guilherme1s" target="_blank">
             Github
           </a>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 hover:text-gray-300 transition-colors duration-100">
           <LinkedInIcon fontSize="large" />
           <a
             href="https://www.linkedin.com/in/guilherme-silva-evangelista022/"

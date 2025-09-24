@@ -61,7 +61,7 @@ export const skills: Skill[] = [
     id: 7,
     title: "Next.js",
     icon: SiNextdotjs,
-    hoverClass: "hover:text-dark-secondary",
+    hoverClass: "hover:text-gray-600",
   },
   {
     id: 8,

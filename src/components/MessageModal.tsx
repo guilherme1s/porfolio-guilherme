@@ -13,12 +13,12 @@ export function MessageModal({ message, isOpen, onClose }: MessageModalProps) {
     <div className="fixed inset-0 flex items-center justify-center z-50">
       <div className="absolute inset-0 bg-black/50"></div>
 
-      <div className="relative bg-white dark:bg-dark w-1/3 max-w-full p-12 rounded-lg shadow-lg z-50">
+      <div className="relative bg-white dark:bg-dark-primary w-1/3 max-w-full p-12 rounded-lg shadow-lg z-50">
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 text-gray-500 hover:text-gray-700"
+          className="absolute top-3 right-3 text-gray-500 hover:text-gray-700 cursor-pointer"
         >
-          <span className="text-4xl">
+          <span className="text-4xl dark:text-white">
             <CloseIcon fontSize="large" />
           </span>
         </button>

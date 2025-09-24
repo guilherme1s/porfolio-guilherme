@@ -20,7 +20,8 @@ export const projects = [
   {
     id: 3,
     title: "Formulário de login",
-    description: "Formulário de login",
+    description:
+      "Projeto simples de formulário de login, desenvolvido com HTML e CSS. Focado em praticar design responsivo e usabilidade.",
     tecnology: ["HTML", "CSS"],
     deployUrl: "https://guilherme1s.github.io/login-form/",
     gitHubUrl: "https://github.com/guilherme1s/login-form",
@@ -37,8 +38,9 @@ export const projects = [
     id: 5,
     title: "Ignite Feed",
     description:
-      "Projeto da Rocketseat: rede social simples com publicação de posts, curtidas e interações",
+      "Projeto da Rocketseat: Simula uma rede social, permitindo criar posts, curtir e interagir. Desenvolvido para praticar conceitos de React e TypeScript.",
     tecnology: ["React", "TypeScript"],
+    deployUrl: "https://ignite-feed-ts-taupe.vercel.app/",
     gitHubUrl: "https://github.com/guilherme1s/igniteFeedTS",
   },
   {
@@ -47,6 +49,7 @@ export const projects = [
     description:
       "Projeto da Rocketseat: Timer pomodoro permitindo criar ciclos de tempo e ver o histórico de ciclos anteriores ou em andamento",
     tecnology: ["React", "TypeScript"],
+    deployUrl: "https://02-ignite-timer-three-eta.vercel.app/",
     gitHubUrl: "https://github.com/guilherme1s/02-ignite-timer",
   },
 ];

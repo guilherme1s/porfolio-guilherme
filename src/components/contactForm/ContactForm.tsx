@@ -64,7 +64,7 @@ export function ContactForm() {
           <input
             id="nameInput"
             placeholder="Seu nome"
-            className="rounded-sm mt-1 p-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-secondary"
+            className="rounded-sm mt-1 p-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
             required
             {...register("nameInput", { required: true })}
           />
@@ -76,7 +76,7 @@ export function ContactForm() {
             id="emailInput"
             placeholder="seu@email.com"
             type="email"
-            className="rounded-sm mt-1 p-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-secondary"
+            className="rounded-sm mt-1 p-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
             required
             {...register("emailInput", { required: true })}
           />
@@ -87,7 +87,7 @@ export function ContactForm() {
           <textarea
             id="messageInput"
             placeholder="Sua mensagem"
-            className="h-32 resize-none mt-1 rounded-sm p-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-secondary"
+            className="h-32 resize-none mt-1 rounded-sm p-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
             required
             {...register("messageInput", { required: true })}
           />
@@ -95,7 +95,7 @@ export function ContactForm() {
 
         <button
           type="submit"
-          className="p-2 text-white bg-primary cursor-pointer rounded-md font-medium mt-6"
+          className="p-2 text-white bg-primary cursor-pointer rounded-md font-medium mt-6 hover:text-gray-300"
         >
           Enviar
         </button>

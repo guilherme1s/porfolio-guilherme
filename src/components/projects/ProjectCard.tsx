@@ -36,7 +36,7 @@ export function ProjectCard({
 
       <div className="flex gap-2 justify-start">
         {deployUrl && (
-          <button className="p-2 w-1/2 rounded-lg text-white bg-primary">
+          <button className="cursor-pointer p-2 w-1/2 rounded-lg text-white bg-primary hover:text-gray-300 transition-colors duration-100">
             <a href={deployUrl} target="_blank">
               Ver deploy
             </a>
@@ -44,7 +44,8 @@ export function ProjectCard({
         )}
 
         <button
-          className={`p-2 rounded-lg text-white bg-primary ${
+          className={`p-2 cursor-pointer rounded-lg text-white hover:text-gray-300 transition-colors duration-100 bg-primary  
+            ${
             deployUrl ? "w-1/2" : "w-full"
           }`}
         >
