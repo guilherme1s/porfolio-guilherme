@@ -64,7 +64,7 @@ export function ContactForm() {
           <input
             id="nameInput"
             placeholder="Seu nome"
-            className="rounded-sm mt-1 p-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+            className="rounded-sm mt-1 p-2 border placeholder-gray-400 border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
             required
             {...register("nameInput", { required: true })}
           />
@@ -76,7 +76,7 @@ export function ContactForm() {
             id="emailInput"
             placeholder="seu@email.com"
             type="email"
-            className="rounded-sm mt-1 p-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+            className="rounded-sm mt-1 p-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary placeholder-gray-400"
             required
             {...register("emailInput", { required: true })}
           />
@@ -87,7 +87,7 @@ export function ContactForm() {
           <textarea
             id="messageInput"
             placeholder="Sua mensagem"
-            className="h-32 resize-none mt-1 rounded-sm p-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+            className="placeholder-gray-400 h-32 resize-none mt-1 rounded-sm p-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
             required
             {...register("messageInput", { required: true })}
           />
