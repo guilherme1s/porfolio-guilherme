@@ -2,6 +2,7 @@ import guilhermePerfil from "../../assets/guilherme-perfil.jpeg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { DownloadCurriculum } from "../DownloadCurriculum";
+import { Avatar } from "../Avatar";
 
 export function About() {
   return (
@@ -48,12 +49,8 @@ export function About() {
         </div>
       </div>
 
-      <div className="flex-1 justify-center items-center flex">
-        <img
-          src={guilhermePerfil}
-          className="hidden xl:flex rounded-full border-4 border-white outline-4 outline-primary"
-          alt="Imagem perfil Guilherme Evangelista"
-        />
+      <div className="hidden xl:flex">
+        <Avatar src={guilhermePerfil} />
       </div>
     </div>
   );
